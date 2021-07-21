@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EEA2DF01-5688-4EA0-A223-0E050D910899}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RES.FrontEnd</RootNamespace>
+    <AssemblyName>RES</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>RES.FrontEnd.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Timbrar.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrar\Grupos\FrmAddGrupos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrar\Grupos\FrmAddGrupos.Designer.cs">
+      <DependentUpon>FrmAddGrupos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrar\Grupos\FrmGrupos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrar\Grupos\FrmGrupos.Designer.cs">
+      <DependentUpon>FrmGrupos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrar\Grupos\FrmModGrupos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrar\Grupos\FrmModGrupos.Designer.cs">
+      <DependentUpon>FrmModGrupos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrar\Procesos\Calcular_Horas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrar\Procesos\Calcular_Horas.Designer.cs">
+      <DependentUpon>Calcular_Horas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrar\Procesos\Calcular_Timbradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrar\Procesos\Calcular_Timbradas.Designer.cs">
+      <DependentUpon>Calcular_Timbradas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrar\Procesos\Correccion_Horas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrar\Procesos\Correccion_Horas.Designer.cs">
+      <DependentUpon>Correccion_Horas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrar\Procesos\Correccion_Ticket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrar\Procesos\Correccion_Ticket.Designer.cs">
+      <DependentUpon>Correccion_Ticket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrar\Procesos\TimbradaManual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrar\Procesos\TimbradaManual.Designer.cs">
+      <DependentUpon>TimbradaManual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrar\Sujetos\FrmAddSujetos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrar\Sujetos\FrmAddSujetos.Designer.cs">
+      <DependentUpon>FrmAddSujetos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrar\Sujetos\FrmModSujetos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrar\Sujetos\FrmModSujetos.Designer.cs">
+      <DependentUpon>FrmModSujetos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrar\Sujetos\FrmSujetos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrar\Sujetos\FrmSujetos.Designer.cs">
+      <DependentUpon>FrmSujetos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles Base\Contol_Acceso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles Base\Contol_Acceso.Designer.cs">
+      <DependentUpon>Contol_Acceso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles Base\Control_Agregar_Pq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles Base\Control_Agregar_Pq.Designer.cs">
+      <DependentUpon>Control_Agregar_Pq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles Base\Control_Lista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles Base\Control_Lista.Designer.cs">
+      <DependentUpon>Control_Lista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles Base\Control_Principal_Vista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles Base\Control_Principal_Vista.Designer.cs">
+      <DependentUpon>Control_Principal_Vista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles Base\InputMensaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles Base\InputMensaje.Designer.cs">
+      <DependentUpon>InputMensaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSplash.Designer.cs">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Acerca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Acerca.Designer.cs">
+      <DependentUpon>Frm_Acerca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Login.Designer.cs">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDI_PantallaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI_PantallaPrincipal.Designer.cs">
+      <DependentUpon>MDI_PantallaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usuario\FrmAddUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario\FrmAddUsuarios.Designer.cs">
+      <DependentUpon>FrmAddUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\FrmModUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario\FrmModUsuarios.Designer.cs">
+      <DependentUpon>FrmModUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\FrmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario\FrmUsuarios.Designer.cs">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Administrar\Grupos\FrmAddGrupos.resx">
+      <DependentUpon>FrmAddGrupos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrar\Grupos\FrmGrupos.resx">
+      <DependentUpon>FrmGrupos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrar\Grupos\FrmModGrupos.resx">
+      <DependentUpon>FrmModGrupos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrar\Procesos\Calcular_Horas.resx">
+      <DependentUpon>Calcular_Horas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrar\Procesos\Calcular_Timbradas.resx">
+      <DependentUpon>Calcular_Timbradas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrar\Procesos\Correccion_Horas.resx">
+      <DependentUpon>Correccion_Horas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrar\Procesos\Correccion_Ticket.resx">
+      <DependentUpon>Correccion_Ticket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrar\Procesos\TimbradaManual.resx">
+      <DependentUpon>TimbradaManual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrar\Sujetos\FrmAddSujetos.resx">
+      <DependentUpon>FrmAddSujetos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrar\Sujetos\FrmModSujetos.resx">
+      <DependentUpon>FrmModSujetos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrar\Sujetos\FrmSujetos.resx">
+      <DependentUpon>FrmSujetos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles Base\Contol_Acceso.resx">
+      <DependentUpon>Contol_Acceso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles Base\Control_Agregar_Pq.resx">
+      <DependentUpon>Control_Agregar_Pq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles Base\Control_Lista.resx">
+      <DependentUpon>Control_Lista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles Base\Control_Principal_Vista.resx">
+      <DependentUpon>Control_Principal_Vista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles Base\InputMensaje.resx">
+      <DependentUpon>InputMensaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSplash.resx">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Acerca.resx">
+      <DependentUpon>Frm_Acerca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Login.resx">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI_PantallaPrincipal.resx">
+      <DependentUpon>MDI_PantallaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Usuario\FrmAddUsuarios.resx">
+      <DependentUpon>FrmAddUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario\FrmModUsuarios.resx">
+      <DependentUpon>FrmModUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario\FrmUsuarios.resx">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Controlador\LogicaNegocio\LogicaNegocio.csproj">
+      <Project>{78a213a4-e203-4592-b345-3eb531d2f092}</Project>
+      <Name>LogicaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ControlesPersonalizados\ControlesPersonalizados.csproj">
+      <Project>{13f0d9f6-e0ae-491b-847d-3fb3960b0b67}</Project>
+      <Name>ControlesPersonalizados</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Timbrar.ico" />
+    <None Include="Resources\table_select_row.png" />
+    <None Include="Resources\save32.png" />
+    <None Include="Resources\page_white_edit.png" />
+    <None Include="Resources\document_redirect.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\cross_shield.png" />
+    <None Include="Resources\arrow_refresh.png" />
+    <None Include="Resources\add.png" />
+    <Content Include="Resources\barcode.png" />
+    <Content Include="Resources\cancel.png" />
+    <Content Include="Resources\card_back.png" />
+    <Content Include="Resources\category_group.png" />
+    <Content Include="Resources\fingerprint.png" />
+    <Content Include="Resources\id2.png" />
+    <Content Include="Resources\reseller_account.png" />
+    <Content Include="Resources\table_row_delete.png" />
+    <Content Include="Resources\tab_edit.png" />
+    <Content Include="Resources\Timbrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
